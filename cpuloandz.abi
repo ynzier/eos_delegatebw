@@ -1,0 +1,77 @@
+{
+    "____comment": "This file was generated with eosio-abigen. DO NOT EDIT ",
+    "version": "eosio::abi/1.2",
+    "types": [],
+    "structs": [
+        {
+            "name": "getunstake",
+            "base": "",
+            "fields": []
+        },
+        {
+            "name": "logstake",
+            "base": "",
+            "fields": [
+                {
+                    "name": "from",
+                    "type": "name"
+                },
+                {
+                    "name": "unstakeTime",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "stake_value",
+                    "type": "asset"
+                }
+            ]
+        },
+        {
+            "name": "logstaking",
+            "base": "",
+            "fields": [
+                {
+                    "name": "key",
+                    "type": "uint64"
+                },
+                {
+                    "name": "user",
+                    "type": "name"
+                },
+                {
+                    "name": "unstakeTime",
+                    "type": "time_point_sec"
+                },
+                {
+                    "name": "waxstake",
+                    "type": "asset"
+                }
+            ]
+        }
+    ],
+    "actions": [
+        {
+            "name": "getunstake",
+            "type": "getunstake",
+            "ricardian_contract": ""
+        },
+        {
+            "name": "logstake",
+            "type": "logstake",
+            "ricardian_contract": ""
+        }
+    ],
+    "tables": [
+        {
+            "name": "logstaking",
+            "type": "logstaking",
+            "index_type": "i64",
+            "key_names": [],
+            "key_types": []
+        }
+    ],
+    "kv_tables": {},
+    "ricardian_clauses": [],
+    "variants": [],
+    "action_results": []
+}
